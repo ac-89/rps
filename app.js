@@ -7,6 +7,20 @@ let computerPlay = function () {
   computer = plays[randNum];
 };
 
+let gameCheck = function () {
+  if (player == computer) {
+    console.log("it's a draw");
+  } else if (
+    (computer == "rock" && player == "scissors") ||
+    (computer == "scissors" && player == "paper") ||
+    (computer == "paper" && player == "rock")
+  ) {
+    console.log("Computer is the winner!");
+  } else {
+    console.log("player wins!");
+  }
+};
+
 let playerChoice = function () {
   player = prompt("Select Rock, Paper or Scissors");
   console.log(`Player chooses ${player}`);
