@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -25,4 +26,9 @@
 .scissors-btn {
   background-color: red;
   color: aliceblue;
+}
+
+.scores {
+  /* text-align: center; */
+  width: 35%;
 }
