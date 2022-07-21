@@ -10,6 +10,7 @@ const compChoice = document.querySelector(".comp-choice");
 const compScore = document.querySelector(".comp-score");
 const playScore = document.querySelector(".play-score");
 const resultText = document.querySelector(".result");
+const buttons = document.querySelector(".buttons");
 
 let computerPlay = function (e) {
   let randNum = Math.floor(Math.random() * 3);
@@ -45,8 +46,10 @@ let gameCheck = function () {
 let scoreCheck = function () {
   if (playerScore == 5) {
     console.log("Player wins!");
+    buttons.style.display = "none";
   } else if (computerScore == 5) {
     console.log("Computer wins!");
+    buttons.style.display = "none";
   } else {
     computerPlay();
     // playerChoice();
